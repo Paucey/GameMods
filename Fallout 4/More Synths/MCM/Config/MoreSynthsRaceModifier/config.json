@@ -1,0 +1,65 @@
+{
+  "modName": "MoreSynthsRaceModifier",      
+  "displayName": "More Synths",   
+  "minMcmVersion": 1,
+  "pluginRequirements": ["MoreSynthsRaceModifier.esl"],  
+  "content": 
+	[
+		{
+            "text": "<b>MORE SYNTHS v2.23</b>",
+            "type": "section", "html": true
+        },
+		{
+            "type": "spacer"
+        },
+		{
+            "text": "This mod adds Synth Components to the corpses of random Human NPCs, effectively making them Gen-3 Synths. Below you can customize the mod to suit your preferences.",
+            "type": "text"
+        },
+		{
+     		"text": "Enable / Disable",
+			"type": "section"
+    	},
+				{
+					"text": "More Synths",
+				 	"type": "switcher",
+					"help": "Toggle Mod Scripts (Default On)",
+					"valueOptions": 
+					{
+						"sourceType": "GlobalValue",
+						"sourceForm": "MoreSynthsRaceModifier.esl|802"
+					}
+				},				
+				{
+            "type": "spacer"
+        },
+		{
+     		"text": "Options",
+			"type": "section"
+    	},
+				{
+					"text": "Affect Unique NPCs",
+				 	"type": "switcher",
+					"help": "Whether Unique Human NPCs are affected by the mod (Default Off)",
+					"valueOptions": 
+					{
+						"sourceType": "GlobalValue",
+						"sourceForm": "MoreSynthsRaceModifier.esl|801"
+					}
+				},				
+				{
+					"text": "Chance (percent) that Human NPCs are Synths",
+					"type": "slider",
+					"help": "Chance (percent) that Human NPCs are Synths - Range: 0.1-100 (Default 1)",
+					"valueOptions": 
+					{
+						"min": 0.1,
+						"max": 100,
+						"step": 0.1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "MoreSynthsRaceModifier.esl|800"
+					}
+				}  
+
+    ]             
+}
